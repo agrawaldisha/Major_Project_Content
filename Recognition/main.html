@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Page</title>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #29648A; /* Deep purple */
+}
+
+
+#loader-container {
+  width: 200px;
+  text-align: center;
+}
+
+.loader {
+  border: 10px solid #3498db;
+  border-top: 10px solid transparent;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  margin: 0 auto;
+  animation: spin 1s linear infinite;
+}
+
+.loader-text {
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+  </style>
+</head>
+<body>
+  <div id="loader-container">
+    <div class="loader"></div>
+    <div class="loader-text">Here goes your recognition site</div>
+  </div>
+
+  <script>
+    setTimeout(function() {
+      window.location.href = 'index.html'; // Redirect after 7 seconds
+    }, 7000);
+  </script>
+</body>
+</html>
