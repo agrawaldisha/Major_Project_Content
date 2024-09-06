@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+.logo img {
+  height: 50px;
+  vertical-align: middle;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #333; /* Adding background color */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px; /* Adjust padding as needed */
+}
+
+.logo img {
+  height: 50px;
+  vertical-align: middle;
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links ul li {
+  display: inline;
+  margin-right: 30px; /* Increase gap between navigation items */
+}
+
+.nav-links ul li:last-child {
+  margin-right: 0;
+}
+
+.nav-links ul li a {
+  color: #fff; /* Changing text color to white */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px; /* Increase font size */
+}
+
+.home, .services, .about {
+  padding: 50px 0;
+}
+
+.home {
+  background-color: #f9f9f9;
+  padding:2px 0;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.2%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+}
+
+.card h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+.about {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.about p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.about ul li {
+  margin-bottom: 10px;
+}
+
+.about ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about ul li a:hover {
+  text-decoration: underline;
+}
+
+.card p {
+  color: #666;
+}
+
+.services,
+.about {
+  padding: 50px 0;
+}
+
+.services h2,
+.about h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact-info {
+  text-align: center;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 15px;
+}
+
+.contact-info li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info li a:hover {
+  text-decoration: underline;
+}
+footer{
+  background-color: #333;
+  color: white;
+  padding-left: 600px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .nav-links {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .nav-links li:last-child {
+    margin-bottom: 0;
+  }
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.jfif" alt="Logo">
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="home">
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="images/Vedio.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2 >Services</h2>
+    <div class="container">
+      
+      <div class="service-cards">
+        <div class="card">
+          <h3>Recognize ASL</h3>
+          <p>Access a self-made dataset to recognize American Sign Language gestures.</p>
+        </div>
+        <div class="card">
+          <h3>Face Recognition Attendance System</h3>
+          <p>Implement a real-time attendance system using face recognition technology and a real-time database.</p>
+        </div>
+        <div class="card">
+          <h3>Face Recognition with Mask</h3>
+          <p>Ability to detect and verify the face with high Coverence</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About Our Major Project</h2>
+    <div class="container">
+     <div id="info">
+      <p>Welcome to our major project website! This project represents the culmination of our hard work, dedication, and learning throughout our journey. It is a testament to our skills, creativity, and passion for innovation.</p>
+      <p>Our major project aims to address significant challenges and make a meaningful impact in our field. Through extensive research, analysis, and collaboration, we have developed innovative solutions that push the boundaries of what is possible.</p>
+      <p>This project is not just about delivering a product; it's about growth, learning, and pushing ourselves to new heights. It has provided us with invaluable opportunities to expand our knowledge, refine our skills, and explore new technologies.</p>
+    </div>
+  </section>
+  <section class="contact-info">
+    <ul>
+      <li>Email: <a href="mailto:agrawaldisha294@example.com">agrawaldisha294.email@example.com</a></li>
+      <li>Phone: <a href="tel:+1234567890">74+++++++</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/your-profile">LinkedIn Profile</a></li>
+      <li>GitHub: <a href="https://github.com/your-username"> GitHub Profile</a></li>
+    </ul>
+  </section>
+  <footer>
+    &copy Disha Agrawal
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
